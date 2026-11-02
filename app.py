@@ -13,7 +13,7 @@ st.caption("AIの店員とチャットでリアルな値引き交渉を体験し
 
 @st.cache_resource
 def get_gemini_client():
-    return genai.Client(api_key="GEMINI_API_KEY")
+    return genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
 
 try:
     client = get_gemini_client()
