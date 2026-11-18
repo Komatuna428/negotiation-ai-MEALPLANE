@@ -3,12 +3,12 @@ from google import genai
 import os
 
 st.set_page_config(
-    page_title="対話型値引き交渉AI",
+    page_title="値引き交渉AIメアルプラネ",
     page_icon="🛍️",
     layout="centered"
 )
 
-st.title("🛍️ 対話型値引き交渉 AI")
+st.title("値引き交渉AI メアルプラネ")
 st.caption("AIの店員とチャットでリアルな値引き交渉を体験しよう！")
 
 @st.cache_resource
@@ -70,7 +70,7 @@ if "chat" not in st.session_state:
     st.session_state.chat = None
 
 if st.session_state.selected_scenario is None:
-    st.markdown("### 📍 交渉するシチュエーションを選んでね（※難易度ノーマル〜やや難）")
+    st.markdown("### 交渉するシチュエーションを選んでください")
     st.write("")
 
     cols = st.columns(3)
